@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checkable="false"
+                android:clickable="false"
+                android:elevation="1dp"
+                android:focusable="false"
+                app:contentPadding="5dp">
+                <!--  Add Vaccination Form      -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/labelFormHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:text="Add New Division"
+                        android:textColor="@color/colorAppPrimary"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:transitionName="logo_text" />
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chip_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:singleSelection="false">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pick location"
+                           app:chipIcon="@drawable/ic_baseline_my_location_24"
+                            app:chipStartPadding="7dp" />
+
+                    </com.google.android.material.chip.ChipGroup>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginVertical="7dp"
+                        android:text="pick location on Map or Type it Manual"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Latitude"
+                            app:hintTextColor="@color/colorAppPrimary"
+                            app:boxStrokeColor="@color/colorAppPrimary"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            >
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_latitude"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingVertical="7dp"
+                                android:inputType="text"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Longitude"
+                            app:hintTextColor="@color/colorAppPrimary"
+                            app:boxStrokeColor="@color/colorAppPrimary"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            >
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_longitude"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingVertical="7dp"
+                                android:inputType="text"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:hint="Reg No"
+                        app:boxStrokeColor="@color/colorAppPrimary"
+                        app:hintTextColor="@color/colorAppPrimary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtRegNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:paddingVertical="10dp"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:hint="Division Name"
+                        app:boxStrokeColor="@color/colorAppPrimary"
+                        app:hintTextColor="@color/colorAppPrimary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="10dp"
+                            android:inputType="textEmailAddress"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:hint="District"
+                        app:boxStrokeColor="@color/colorAppPrimary"
+                        app:hintTextColor="@color/colorAppPrimary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtDistrict"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="10dp"
+                            android:inputType="textEmailAddress"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btn_dialog_btnCancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cancel "
+                            android:layout_marginRight="10dp"
+                            style="?attr/materialButtonOutlinedStyle"
+                            />
+                        <Button
+                            android:id="@+id/btn_dialog_btnAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--  .\Add Vaccination Form      -->
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

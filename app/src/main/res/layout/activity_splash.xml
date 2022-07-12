@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".activity.SplashActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="280dp"
+        android:layout_height="550dp"
+        android:src="@drawable/rfid_ugp"
+        app:layout_constraintBottom_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:textAlignment="center"
+        android:text="V 1.0 \nFaculty of Engineering, University of Ruhuna"
+        android:textColor="@color/colorAppPrimary"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168.8.156</domain>
+<!--        <domain includeSubdomains="true">192.168.1.101</domain>-->
+<!--        <domain includeSubdomains="true">192.168.43.187</domain>-->
+        <domain includeSubdomains="true">storage.googleapis.com</domain>
+        <domain includeSubdomains="true">https://gfod-management-app.herokuapp.com</domain>
+    </domain-config>
+</network-security-config>

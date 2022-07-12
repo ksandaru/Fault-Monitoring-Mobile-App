@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GFOD App</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+     <string name="apiBaseUrl">http:192.168.8.156:8081/</string>
+<!--    <string name="apiBaseUrl">http:192.168.1.101:8081/</string>-->
+<!--    <string name="apiBaseUrl">https://gfod-management-app.herokuapp.com/</string>-->
+<!--        <string name="apiBaseUrl">http:192.168.43.187:8081/</string>-->
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorLightGray"
+tools:context=".fragment.AddFaultFragment">
+<!--Required ->  xmlns:app="http://schemas.android.com/apk/res-auto"-->
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginTop="7dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="true"
+        android:checkable="true"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="7dp"
+        android:layout_marginTop="15dp"
+        app:contentPadding="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:orientation="horizontal">
+            <!-- Activity Heading         -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/logoImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:transitionName="logo_image"
+                    android:src="@drawable/ic_baseline_sentiment_very_dissatisfied_24"
+                    />
+
+                <TextView
+                    android:layout_marginHorizontal="15dp"
+                    android:id="@+id/logo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:transitionName="logo_text"
+                    android:text="Disaster Management"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+            <!--.\Activity Heading         -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add New"
+                android:layout_marginTop="10dp"
+                app:icon="@drawable/ic_baseline_add_24"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                />
+            <Button
+                android:id="@+id/btnGotoMapDisaster"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map view"
+                android:layout_marginTop="10dp"
+                app:icon="@drawable/ic_baseline_my_location_24"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="true"
+            android:checkable="true"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="15dp"
+            app:contentPadding="12dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Year"
+                        android:layout_marginHorizontal="10dp"
+                        app:hintTextColor="@color/colorAppPrimary"
+                        app:boxStrokeColor="@color/colorAppPrimary"
+                        app:startIconDrawable="@drawable/ic_baseline_search_24"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtSearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="10dp"
+                            android:inputType="number"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chip_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:singleSelection="false">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_local_disaster"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My Division"
+                            app:chipStartPadding="7dp" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_all_disaster"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="All"
+                            app:chipStartPadding="7dp" />
+
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/recycleViewHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_height="wrap_content"
+                    android:transitionName="logo_text"
+                    android:text="Disasters list"
+                    android:textColor="@color/colorAppPrimary"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/userRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/search_bar" />
+
+
+
+        </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </ScrollView>
+
+</LinearLayout>
+
+
+</FrameLayout>

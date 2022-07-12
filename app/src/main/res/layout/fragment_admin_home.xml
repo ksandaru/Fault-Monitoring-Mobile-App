@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F1F1F1"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".fragment.AdminHomeFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp"
+    android:layout_gravity="center_horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="true"
+        android:checkable="true"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginHorizontal="7dp"
+        android:layout_marginTop="15dp"
+        app:contentPadding="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            android:orientation="horizontal">
+            <!--  Card Left  -->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageDisaster"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:civ_border_color="@color/colorAppPrimary"
+                android:layout_marginRight="10dp"
+                app:civ_border_width="1dp"
+                android:src="@drawable/ic_baseline_users_24" />
+            <!--  Card Left  -->
+            <!--  Card Right  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:id="@+id/tvOwnerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Name of the user"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    />
+                <TextView
+                    android:id="@+id/tvOwnerEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="13sp"
+                    android:text="NIC and Email"
+                    android:textStyle="bold"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/colorAppPrimary"
+                    />
+                <TextView
+                    android:id="@+id/txtDetail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="District Province"
+                    android:textSize="13sp"
+                    android:textStyle="italic"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/colorAppPrimary"
+                    />
+            </LinearLayout>
+            <!-- .\Card Right  -->
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ACTIVITIES"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="7dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAppPrimary"
+                />
+
+            <!--  Card row 1  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingVertical="15dp"
+                >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardReaderOperator"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:checkable="true"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:contentPadding="12dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reader Operator"
+                            android:textSize="16sp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:id="@+id/tvGNCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="0 Readers added"
+                            android:textSize="13sp"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/colorAppPrimary"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardPeoples"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:checkable="true"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:contentPadding="12dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Peoples"
+                            android:textSize="16sp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:id="@+id/tvPeoplesCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="0 peoples added"
+                            android:textSize="13sp"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/colorAppPrimary"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+            <!--  Card row 1 End -->
+
+            <!--  Card row 2  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingVertical="15dp"
+                >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardDivisions"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:checkable="true"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:contentPadding="12dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Operator Divisions"
+                            android:textSize="16sp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:id="@+id/tvDivisionsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="0 divsions added"
+                            android:textSize="13sp"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/colorAppPrimary"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardDisasters"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:checkable="true"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:contentPadding="12dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Disasters"
+                            android:textSize="16sp"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:id="@+id/tvDisastersCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="disasters list"
+                            android:textSize="13sp"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/colorAppPrimary"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+            <!--  Card row 2 End -->
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+</FrameLayout>
