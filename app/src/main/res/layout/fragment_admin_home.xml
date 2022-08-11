@@ -3,7 +3,7 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:background="#F1F1F1"
+android:background="@color/lllightblue"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 tools:context=".fragment.AdminHomeFragment">
 
@@ -23,6 +23,7 @@ tools:context=".fragment.AdminHomeFragment">
         app:cardElevation="5dp"
         app:cardCornerRadius="10dp"
         android:layout_marginHorizontal="7dp"
+        app:cardBackgroundColor="@color/lllightpurple"
         android:layout_marginTop="15dp"
         app:contentPadding="12dp">
         <LinearLayout
@@ -71,7 +72,6 @@ tools:context=".fragment.AdminHomeFragment">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
-                    android:text="District Province"
                     android:textSize="13sp"
                     android:textStyle="italic"
                     android:textAppearance="?attr/textAppearanceBody2"
@@ -123,6 +123,7 @@ tools:context=".fragment.AdminHomeFragment">
                     app:cardCornerRadius="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginHorizontal="10dp"
+                    app:cardBackgroundColor="@color/llightgreen"
                     app:contentPadding="12dp">
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -159,6 +160,7 @@ tools:context=".fragment.AdminHomeFragment">
                     app:cardCornerRadius="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginHorizontal="10dp"
+                    app:cardBackgroundColor="@color/llightgreen"
                     app:contentPadding="12dp"
                     >
                     <LinearLayout
@@ -168,7 +170,7 @@ tools:context=".fragment.AdminHomeFragment">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Peoples"
+                            android:text="UHF Tags"
                             android:textSize="16sp"
                             android:textAppearance="?attr/textAppearanceHeadline6"
                             />
@@ -177,7 +179,7 @@ tools:context=".fragment.AdminHomeFragment">
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="0 peoples added"
+                            android:text="0 UHF tags added"
                             android:textSize="13sp"
                             android:textAppearance="?attr/textAppearanceBody2"
                             android:textColor="@color/colorAppPrimary"
@@ -206,6 +208,7 @@ tools:context=".fragment.AdminHomeFragment">
                     app:cardElevation="5dp"
                     app:cardCornerRadius="10dp"
                     android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/llightgreen"
                     android:layout_marginHorizontal="10dp"
                     app:contentPadding="12dp">
                     <LinearLayout
@@ -242,6 +245,7 @@ tools:context=".fragment.AdminHomeFragment">
                     app:cardElevation="5dp"
                     app:cardCornerRadius="10dp"
                     android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/llightgreen"
                     android:layout_marginHorizontal="10dp"
                     app:contentPadding="12dp"
                     >

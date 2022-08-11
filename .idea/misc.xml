@@ -38,15 +38,16 @@
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/drawable/ic_baseline_users_24.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/activity_admin_page_container.xml" value="0.176" />
-        <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/activity_forget_passowrd.xml" value="0.2" />
+        <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/activity_forget_passowrd.xml" value="0.4" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/activity_gnpage_container.xml" value="0.4" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/activity_reset_password.xml" value="0.264" />
-        <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/activity_splash.xml" value="0.536" />
+        <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/activity_splash.xml" value="0.5155038759689923" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/dialog_layout_add_disaster.xml" value="0.264" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/dialog_layout_add_division.xml" value="0.264" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/dialog_layout_add_person.xml" value="0.264" />
+        <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/dialog_layout_add_uhf.xml" value="0.259375" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/dialog_layout_add_user.xml" value="0.264" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/dialog_layout_divisions_list.xml" value="0.4" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/disasters_recyclerview_item.xml" value="0.264" />
@@ -58,10 +59,12 @@
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/fragment_disasters_map.xml" value="0.4" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/fragment_g_n_home.xml" value="0.259375" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/fragment_my_profile.xml" value="0.264" />
+        <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/fragment_u_h_f.xml" value="0.259375" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/fragment_view_disaster.xml" value="0.259375" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/fragment_view_division.xml" value="0.4" />
-        <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/fragment_view_user.xml" value="0.4" />
-        <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/progress_dialog.xml" value="0.264" />
+        <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/fragment_view_user.xml" value="0.264" />
+        <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/progress_dialog.xml" value="0.2" />
+        <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/uhf_recyclerview_item.xml" value="0.264" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/layout/users_recyclerview_item.xml" value="0.264" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/menu/admin_bottom_nav_menu.xml" value="0.12291666666666666" />
         <entry key="..\:/Users/User/Documents/UGP_FYP mobile app/editing with new db/GFOD App/app/src/main/res/menu/gn_bottom_nav_menu.xml" value="0.264" />
@@ -114,6 +117,36 @@
         <entry key="..\:/Users/User/Downloads/Compressed/gfod app with bucket/GFOD-Android-App-main/GFOD App/app/src/main/res/layout/fragment_view_user.xml" value="0.259375" />
         <entry key="..\:/Users/User/Downloads/Compressed/gfod app with bucket/GFOD-Android-App-main/GFOD App/app/src/main/res/layout/progress_dialog.xml" value="0.259375" />
         <entry key="..\:/Users/User/Downloads/Compressed/gfod app with bucket/GFOD-Android-App-main/GFOD App/app/src/main/res/layout/users_recyclerview_item.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/drawable/ic_baseline_my_location_24.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/drawable/ic_baseline_person_add_24.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/activity_admin_page_container.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/activity_forget_passowrd.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/activity_gnpage_container.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/activity_login.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/activity_map.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/activity_register.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/activity_splash.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/dialog_layout_add_disaster.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/dialog_layout_add_division.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/dialog_layout_add_person.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/dialog_layout_add_uhf.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/dialog_layout_add_user.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/dialog_layout_divisions_list.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/disasters_recyclerview_item.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/divisions_recyclerview_item.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/fragment_disasters_map.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/fragment_g_n_home.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/fragment_model_react.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/fragment_my_profile.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/fragment_u_h_f.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/fragment_view_disaster.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/fragment_view_division.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/fragment_view_user.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/progress_dialog.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/uhf_recyclerview_item.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/layout/users_recyclerview_item.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/menu/admin_bottom_nav_menu.xml" value="0.259375" />
+        <entry key="..\:/Users/User/Downloads/editing with new db/GFOD App/app/src/main/res/menu/gn_bottom_nav_menu.xml" value="0.259375" />
       </map>
     </option>
   </component>

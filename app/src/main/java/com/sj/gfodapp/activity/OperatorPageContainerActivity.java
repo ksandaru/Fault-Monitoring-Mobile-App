@@ -12,14 +12,18 @@ import com.sj.gfodapp.fragment.AddDivisionFragment;
 import com.sj.gfodapp.fragment.AddUsersFragment;
 import com.sj.gfodapp.fragment.OperatorHomeFragment;
 import com.sj.gfodapp.fragment.MyProfileFragment;
+import com.sj.gfodapp.fragment.UHFFragment;
+import com.sj.gfodapp.fragment.WebViewFragment;
 import com.sj.gfodapp.utils.ApiInterface;
 import com.sj.gfodapp.utils.AppProgressDialog;
 import com.sj.gfodapp.utils.AppSharedPreferences;
 import com.sj.gfodapp.utils.Navigation;
 import com.sj.gfodapp.databinding.ActivityGnpageContainerBinding;
 import com.sj.gfodapp.utils.RetrofitClient;
+import com.sj.gfodapp.utils.StaticStorage;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.WindowManager;
@@ -77,7 +81,10 @@ public class OperatorPageContainerActivity extends AppCompatActivity implements 
                     break;
                 case R.id.users:
                     if(!myDivisionId.equals(""))
-                        replaceFragment(new AddUsersFragment(true, myDivisionId));
+                        replaceFragment(new UHFFragment());
+                    break;
+                case R.id.reactmap:
+                    replaceFragment(new WebViewFragment());
                     break;
                 case R.id.fault:
                     replaceFragment(new AddFaultFragment());
@@ -89,6 +96,7 @@ public class OperatorPageContainerActivity extends AppCompatActivity implements 
             return true;
         });
     }
+
 
     @Override
     public void onBackPressed() {
@@ -103,6 +111,9 @@ public class OperatorPageContainerActivity extends AppCompatActivity implements 
                 break;
             case "ViewFaultFragment":
                 replaceFragment(new AddFaultFragment());
+                break;
+            case "WebViewFragment":
+                replaceFragment(new WebViewFragment());
                 break;
             case "ViewUserFragment":
                 replaceFragment(new AddUsersFragment("Rfid_tag"));
@@ -138,6 +149,7 @@ public class OperatorPageContainerActivity extends AppCompatActivity implements 
                         JSONObject responseObj = new JSONObject(jsonData);
 
                         myDivisionId = responseObj.getString("divisionId");
+                        StaticStorage.myDivisionID = Integer.parseInt(myDivisionId);
                     } catch (IOException | JSONException e) {
                         e.printStackTrace();
                     }

@@ -27,7 +27,6 @@
                 android:elevation="1dp"
                 android:focusable="false"
                 app:contentPadding="5dp">
-                <!--  Add Vaccination Form      -->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -41,7 +40,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="20dp"
                         android:layout_weight="1"
-                        android:text="Add New RFID Tag "
+                        android:text="Add New Person "
                         android:textColor="@color/colorAppPrimary"
                         android:textSize="17sp"
                         android:textStyle="bold"

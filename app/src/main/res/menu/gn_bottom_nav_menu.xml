@@ -9,6 +9,10 @@
         android:title="Users"
         android:icon="@drawable/ic_baseline_users_24"/>
     <item
+        android:id="@+id/reactmap"
+        android:title="3D map"
+        android:icon="@drawable/ic_baseline_my_location_24"/>
+    <item
         android:id="@+id/fault"
         android:title="Disasters"
         android:icon="@drawable/ic_baseline_sentiment_very_dissatisfied_24"/>

@@ -41,7 +41,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="20dp"
                         android:layout_weight="1"
-                        android:text="Add New Operator"
+                        android:text="Add New UHF Tag"
                         android:textColor="@color/colorAppPrimary"
                         android:textSize="17sp"
                         android:textStyle="bold"
@@ -56,33 +56,30 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:singleSelection="false">
+                        app:singleSelection="false"/>
 
-                        <com.google.android.material.chip.Chip
-                            android:id="@+id/chip_division"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Choose Division"
-                            app:chipIcon="@drawable/ic_baseline_map_24"
-                            app:chipStartPadding="7dp" />
 
-                    </com.google.android.material.chip.ChipGroup>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"/>
+
 
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="7dp"
-                        android:hint="User' NIC number"
+                        android:hint="UHF ID"
                         app:boxStrokeColor="@color/colorAppPrimary"
                         app:hintTextColor="@color/colorAppPrimary">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/txtUserNic"
+                            android:id="@+id/txtUhfID"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:paddingVertical="10dp"
                             android:inputType="text"
+                            android:paddingVertical="10dp"
                             tools:ignore="TouchTargetSizeCheck" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,18 +88,29 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="7dp"
-                        android:hint="User' email"
+                        android:hint="Location ID"
                         app:boxStrokeColor="@color/colorAppPrimary"
                         app:hintTextColor="@color/colorAppPrimary">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/txtUserEmail"
+                            android:id="@+id/txtLocationID"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:paddingVertical="10dp"
                             android:inputType="textEmailAddress"
                             tools:ignore="TouchTargetSizeCheck" />
                     </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:hint="District"
+                        app:boxStrokeColor="@color/colorAppPrimary"
+                        app:hintTextColor="@color/colorAppPrimary"/>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

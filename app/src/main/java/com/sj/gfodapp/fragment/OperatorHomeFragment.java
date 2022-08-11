@@ -44,7 +44,7 @@ public class OperatorHomeFragment extends Fragment {
     static FragmentManager fragmentManager;
 
     private TextView tvOwnerName, tvOwnerEmail, txtDetail2,tvDivisionName, tvRegNo, tv_district, tvPersonCount;
-    private MaterialCardView cardLocalDisasters, cardPeoples;
+    private MaterialCardView cardLocalDisasters, cardTags;
     private CircleImageView userImage;
     private String myDivisionID;
 
@@ -72,7 +72,7 @@ public class OperatorHomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        cardPeoples = (MaterialCardView) getView().findViewById(R.id.cardPeoples);
+        cardTags = (MaterialCardView) getView().findViewById(R.id.cardTags);
         cardLocalDisasters = (MaterialCardView) getView().findViewById(R.id.cardLocalDisasters);
 
         tvOwnerName = (TextView) getView().findViewById(R.id.tvOwnerName);
@@ -88,10 +88,10 @@ public class OperatorHomeFragment extends Fragment {
 
         getCounts();
 
-        cardPeoples.setOnClickListener(new View.OnClickListener() {
+        cardTags.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoFragment(new AddUsersFragment(true,myDivisionID));
+                gotoFragment(new UHFFragment());
             }
         });
 

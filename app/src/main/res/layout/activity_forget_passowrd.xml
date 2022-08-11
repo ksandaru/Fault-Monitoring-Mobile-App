@@ -11,10 +11,10 @@
 
     <ImageView
         android:id="@+id/logoImage"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:transitionName="logo_image"
-        android:src="@drawable/ic_baseline_account_circle_24"
+        android:src="@drawable/bolts"
         />
 
     <TextView
@@ -24,7 +24,7 @@
         android:transitionName="logo_text"
         android:text="Forgot,\n Your Passowrd?"
         android:textSize="30sp"
-        android:fontFamily="@font/bauhs"
+        android:fontFamily="@font/arlrdbdb"
         />
 
     <TextView

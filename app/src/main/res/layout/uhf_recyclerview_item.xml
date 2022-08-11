@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageDisaster"
+        android:layout_width="2dp"
+        android:visibility="invisible"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_users_24" />
+
+    <TextView
+        android:id="@+id/tv_disaster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageDisaster"
+        app:layout_constraintTop_toTopOf="@+id/imageDisaster" />
+
+    <TextView
+        android:id="@+id/tv_monthAndYear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="UHF Tag"
+        android:textColor="@color/colorAppPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_disaster"
+        app:layout_constraintTop_toBottomOf="@+id/tv_disaster" />
+
+    <TextView
+        android:id="@+id/txt_LocationId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="7dp"
+        android:text="Location ID"
+        android:textColor="@color/colorGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_monthAndYear"
+        app:layout_constraintTop_toBottomOf="@+id/tv_monthAndYear" />
+
+    <TextView
+        android:id="@+id/tv_actions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="right"
+        android:text="ACTIONS  "
+        android:clickable="true"
+        android:textColor="@color/colorAppPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_monthAndYear"
+        app:layout_constraintTop_toBottomOf="@+id/tv_disaster" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorAppPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_monthAndYear"
+        app:layout_constraintTop_toBottomOf="@+id/tv_monthAndYear" />
+</androidx.constraintlayout.widget.ConstraintLayout>

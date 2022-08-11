@@ -3,8 +3,17 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-     <string name="apiBaseUrl">http:192.168.8.156:8081/</string>
-<!--    <string name="apiBaseUrl">http:192.168.1.101:8081/</string>-->
-<!--    <string name="apiBaseUrl">https://gfod-management-app.herokuapp.com/</string>-->
-<!--        <string name="apiBaseUrl">http:192.168.43.187:8081/</string>-->
+    <string name="apiBaseUrl">https://ugp-foe-api.herokuapp.com/</string>
+    <string name="title_activity_react_map">ReactMapActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!--    <string name="apiBaseUrl">http:192.168.1.101:8081/</string>-->
+    <!--    <string name="apiBaseUrl">https://gfod-management-app.herokuapp.com/</string>-->
+    <!--        <string name="apiBaseUrl">http:192.168.43.187:8081/</string>-->
 </resources>

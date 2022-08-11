@@ -77,8 +77,7 @@ public class AddUsersFragment extends Fragment {
     private Button btnAddUser, btnRefreshList, btnExportToExcel;
     private static TextView labelNoOfVaccines, label_Heading;
     private TextInputEditText txtSearch;
-    private Chip chip_allTags, chip_tight, chip_loose;
-    private ChipGroup chip_group;
+
     private static Dialog appCustomUpdateDialog;
     private static Dialog appDialogAddRfid_tag;
 
@@ -110,9 +109,6 @@ public class AddUsersFragment extends Fragment {
         switch (_userType){
             case "Operator":
                 this.userType ="Operator";
-                break;
-            case "Rfid_tag":
-                this.userType ="Rfid_tag";
                 break;
         }
         Navigation.currentScreen = "AddUsersFragment";
@@ -218,11 +214,6 @@ public class AddUsersFragment extends Fragment {
         label_Heading = (TextView) getView().findViewById(R.id.label_Heading);
         btnAddUser = (Button) getView().findViewById(R.id.btnAddUser);
         txtSearch = (TextInputEditText) getView().findViewById(R.id.txtSearch);
-
-        chip_group= (ChipGroup) getView().findViewById(R.id.chip_group);
-        chip_allTags= (Chip) getView().findViewById(R.id.chip_allTags);
-        chip_tight= (Chip) getView().findViewById(R.id.chip_tight);
-        chip_loose= (Chip) getView().findViewById(R.id.chip_loose);
         userRecycler = (RecyclerView) getView().findViewById(R.id.userRecycler);
 
         txtSearch.addTextChangedListener(new TextWatcher() {
@@ -260,16 +251,10 @@ public class AddUsersFragment extends Fragment {
         btnRefreshList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(isSingleDivisionMode){
-                    getUsersList(userType, selectedDivisionId);
-                }else{
-                    getUsersList(userType, "all");
-                    getDivisionsList();
-                }
+                getUsersList(userType, "all");
+                getDivisionsList();
             }
         });
-
-
 
         btnExportToExcel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -289,37 +274,7 @@ public class AddUsersFragment extends Fragment {
             }
         });
 
-        chip_allTags.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                chip_allPersonsClick();
-            }
-        });
-        chip_tight.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                chip_voteEligibleClick();
-            }
-        });
-        chip_loose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                chip_voteIneligibleClick();
-            }
-        });
-        
-        switch (userType){
-            case "Operator":
-                label_Heading.setText("Reader Operator List");
-                chip_group.setVisibility(View.GONE);
-                break;
-            case "Rfid_tag":
-                label_Heading.setText("RFID List");
-                chip_group.setVisibility(View.VISIBLE);
-                break;
-        }
-
-        chip_allPersonsClick();
+        getUsersList(userType, "all");
     }
 
 
@@ -384,56 +339,6 @@ public class AddUsersFragment extends Fragment {
         }
     }
 
-
-    private void chip_allPersonsClick(){
-        selectedVoteEliType="all";
-      if(isSingleDivisionMode){
-//            getUsersList(userType, selectedDivisionId);
-            getUsersList(userType, "all");
-        }else{
-            getUsersList(userType, "all");
-        }
-        chip_allTags.setChipBackgroundColorResource(R.color.colorAppPrimary);
-        chip_allTags.setTextColor(Color.parseColor("#FFFFFF"));
-        chip_tight.setChipBackgroundColorResource(R.color.colorLightGray);
-        chip_tight.setTextColor(Color.parseColor("#000000"));
-        chip_loose.setChipBackgroundColorResource(R.color.colorLightGray);
-        chip_loose.setTextColor(Color.parseColor("#000000"));
-    }
-        //Eligible = tight
-    private void chip_voteEligibleClick(){
-        selectedVoteEliType="true";
-        if(isSingleDivisionMode){
-         //   getUsersList(userType, selectedDivisionId)
-                 getUsersList(userType, "tight");
-        }else{
-            getUsersList(userType, "tight");
-        }
-        chip_tight.setChipBackgroundColorResource(R.color.colorAppPrimary);
-        chip_tight.setTextColor(Color.parseColor("#FFFFFF"));
-        chip_allTags.setChipBackgroundColorResource(R.color.colorLightGray);
-        chip_allTags.setTextColor(Color.parseColor("#000000"));
-        chip_loose.setChipBackgroundColorResource(R.color.colorLightGray);
-        chip_loose.setTextColor(Color.parseColor("#000000"));
-    }
-
-    private void chip_voteIneligibleClick(){
-        selectedVoteEliType="false";
-      if(isSingleDivisionMode){
-//            getUsersList(userType, selectedDivisionId);
-          getUsersList(userType, "loose");
-        }else{
-            getUsersList(userType, "loose");
-        }
-      // //  chip_allTags, chip_tight, chip_loose;
-        chip_loose.setChipBackgroundColorResource(R.color.colorAppPrimary);
-        chip_loose.setTextColor(Color.parseColor("#FFFFFF"));
-        chip_allTags.setChipBackgroundColorResource(R.color.colorLightGray);
-        chip_allTags.setTextColor(Color.parseColor("#000000"));
-        chip_tight.setChipBackgroundColorResource(R.color.colorLightGray);
-        chip_tight.setTextColor(Color.parseColor("#000000"));
-    }
-
     public  static void userListItemOnClick(String userProfileId){
         //TODO: Goto View User Fragment
         //  FragmentManager fragmentManager =  AddUsersFragment.getSupportFragmentManager();
@@ -466,7 +371,7 @@ public class AddUsersFragment extends Fragment {
 
         ApiInterface apiInterface = RetrofitClient.getRetrofitInstance(apiBaseUrl).create(ApiInterface.class);
 //        Call<JsonObject> call = apiInterface.getUsersByRole(role, selectedVoteEliType, tagStatus);
-        Call<JsonObject> call = apiInterface.getUsersByRole(role, "all", tagStatus);
+        Call<JsonObject> call = apiInterface.getUsersByRole("Operator");
          System.out.println("===========================URL " + call.request().url());
         appProgressDialog.show();
         call.enqueue(new Callback<JsonObject>() {

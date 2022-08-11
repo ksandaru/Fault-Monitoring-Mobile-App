@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1F1F1"
+    android:background="@color/lllightblue"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.OperatorHomeFragment">
 
@@ -24,6 +24,7 @@
             app:cardCornerRadius="10dp"
             android:layout_marginHorizontal="7dp"
             android:layout_marginTop="15dp"
+            app:cardBackgroundColor="@color/lllightpurple"
             app:contentPadding="12dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -114,6 +115,7 @@
                     app:cardElevation="5dp"
                     app:cardCornerRadius="10dp"
                     android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/llightyellow"
                     app:contentPadding="12dp">
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -197,7 +199,7 @@
                     >
 
                     <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/cardPeoples"
+                        android:id="@+id/cardTags"
                         android:layout_width="160dp"
                         android:layout_height="100dp"
                         android:clickable="true"
@@ -207,6 +209,7 @@
                         app:cardCornerRadius="10dp"
                         android:layout_marginBottom="10dp"
                         android:layout_marginHorizontal="10dp"
+                        app:cardBackgroundColor="@color/llightyellow"
                         app:contentPadding="12dp">
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -215,7 +218,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="RFID Tags"
+                                android:text="UHF Tags"
                                 android:textSize="16sp"
                                 android:textAppearance="?attr/textAppearanceHeadline6"
                                 />
@@ -224,7 +227,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:text="0 RFID tags added"
+                                android:text="0 UHF tags added"
                                 android:textSize="13sp"
                                 android:textAppearance="?attr/textAppearanceBody2"
                                 android:textColor="@color/colorAppPrimary"
@@ -243,6 +246,7 @@
                         app:cardCornerRadius="10dp"
                         android:layout_marginBottom="10dp"
                         android:layout_marginHorizontal="10dp"
+                        app:cardBackgroundColor="@color/llightyellow"
                         app:contentPadding="12dp"
                         >
                         <LinearLayout

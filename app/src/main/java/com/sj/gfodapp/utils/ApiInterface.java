@@ -84,8 +84,8 @@ public interface ApiInterface {
 
 
     //Get Users By Role
-    @GET("api/users/getByRole/{role}/{voteEli}/{divisionId}")
-    Call<JsonObject> getUsersByRole(@Path("role") String role, @Path("voteEli") String voteEli, @Path("divisionId") String divisionId);
+    @GET("api/users/getByRole/{role}")
+    Call<JsonObject> getUsersByRole(@Path("role") String role);
 
     //Get Users & divisions count
     @GET("api/users/count")
@@ -148,4 +148,18 @@ public interface ApiInterface {
                                    @Part("divisionId") RequestBody divisionId,
                                    @Part("longitude") RequestBody longitude,
                                    @Part("latitude") RequestBody latitude);
+
+
+
+    //TODO : UHF
+
+    @GET("api/uhftags/get-by-user-id/{login_id}")
+    Call<JsonObject> getUHFTagsByUserId(@Path("login_id") String login_id);
+
+    @FormUrlEncoded
+    @POST("api/uhftags/add-uhf-tag")
+    Call<JsonObject> addUHFTag(@Field("divisionId") String divisionId,
+                                    @Field("uhfId") String uhfId,
+                                    @Field("status") String status,
+                                    @Field("locationId") String locationId);
 }

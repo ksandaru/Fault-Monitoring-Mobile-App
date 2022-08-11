@@ -13,4 +13,17 @@
     <color name="colorLightGray">#E5E5E5</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
+    <color name="lightblue">#0693E3</color>
+    <color name="llightblue">#79caf7</color>
+    <color name="lllightblue">#c0eff8</color>
+    <color name="lllightpurple">#ded0f6</color>
+
+    <color name="llightyellow">#faefbe</color>
+    <color name="llightgreen">#cdf8c9</color>
+    <color name="llightred">#f6c9b6</color>
+    <color name="splashcolor">#B2EBF2</color>
+
+
+
+
 </resources>

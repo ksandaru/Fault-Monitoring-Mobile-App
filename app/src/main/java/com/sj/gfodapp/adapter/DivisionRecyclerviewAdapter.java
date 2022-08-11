@@ -43,9 +43,9 @@ public class DivisionRecyclerviewAdapter extends RecyclerView.Adapter<DivisionRe
     @Override
     public void onBindViewHolder(@NonNull UsersRecyclerviewHolder holder, @SuppressLint("RecyclerView") final int position) {
 
-        holder.txt_regNumber.setText(filteredDataList.get(position).getRegNumber());
-        holder.txt_Name.setText(filteredDataList.get(position).getName());
-        holder.txt_Province_Discrict.setText("DISTRICT: " + filteredDataList.get(position).getDistrict());
+        holder.txt_regNumber.setText("ID: "+filteredDataList.get(position).getRegNumber());
+        holder.txt_Name.setText("Name: "+filteredDataList.get(position).getName());
+        holder.txt_Province_Discrict.setText("District: " + filteredDataList.get(position).getDistrict());
      //   Picasso.get().load(filteredDataList.get(position).getAvatartUrl()).into(holder.userImage);
 
         ListItemAnimation.animateFadeIn(holder.itemView, position);
