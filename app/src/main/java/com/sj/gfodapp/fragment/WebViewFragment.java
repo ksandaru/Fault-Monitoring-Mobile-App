@@ -42,7 +42,7 @@ public class WebViewFragment extends Fragment {
         View view = inflater.inflate(R.layout.activity_map, container, false);
         webView = (WebView) view.findViewById(R.id.mywebView);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.google.lk/");
+        webView.loadUrl("https://react-3dmodel-visualize.vercel.app/");
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         return view;
